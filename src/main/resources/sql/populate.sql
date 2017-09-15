@@ -1,0 +1,3 @@
+insert into donor (id,date_registered, first_name, is_active, last_logged_in, last_name, password, salt, username) values(1,current_timestamp, 'testfirst', true, current_timestamp, 'testlast', '123', '123', 'test');
+insert into donor (id,date_registered, first_name, is_active, last_logged_in, last_name, password, salt, username) values(2,current_timestamp, 'testfirst2', true, current_timestamp, 'testlast2', '123', '123', 'test2');
+insert into donor (id,date_registered, first_name, is_active, last_logged_in, last_name, password, salt, username) values(3,current_timestamp, 'testfirst3', true, current_timestamp, 'testlast3', '123', '123', 'test3');
