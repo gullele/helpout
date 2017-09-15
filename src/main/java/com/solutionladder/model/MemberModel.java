@@ -2,9 +2,9 @@ package com.solutionladder.model;
 
 import java.util.Date;
 
-import com.solutionladder.dao.entity.Donor;
+import com.solutionladder.dao.entity.Member;
 
-public class DonorModel {
+public class MemberModel {
 	private String firstName;
 	private String lastName;
 	private String username;
@@ -13,15 +13,15 @@ public class DonorModel {
 	private Date lastLoggedIn;
 	private boolean isActive;
 	
-	public DonorModel(){}
-	public DonorModel(Donor donor) {
-		this.firstName = donor.getFirstName();
-		this.lastName = donor.getLastName();
-		this.username = donor.getUsername();
-		this.password = donor.getPassword();
-		this.dateRegistered = donor.getDateRegistered();
-		this.lastLoggedIn = donor.getLastLoggedIn();
-		this.isActive = donor.getIsActive();
+	public MemberModel(){}
+	public MemberModel(Member member) {
+		this.firstName = member.getFirstName();
+		this.lastName = member.getLastName();
+		this.username = member.getUsername();
+		this.password = member.getPassword();
+		this.dateRegistered = member.getDateRegistered();
+		this.lastLoggedIn = member.getLastLoggedIn();
+		this.isActive = member.getIsActive();
 	}
 	public String getFirstName() {
 		return firstName;

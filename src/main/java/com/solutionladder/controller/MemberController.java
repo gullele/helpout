@@ -8,27 +8,27 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 
-import com.solutionladder.model.DonorModel;
-import com.solutionladder.service.DonorService;
+import com.solutionladder.model.MemberModel;
+import com.solutionladder.service.MemberService;
 
 /**
- * Controller for Donor related requests
+ * Controller for Member related requests
  * @author Kaleb Woldearegay <kaleb@solutionladder.com>
  *
  */
 @Controller
-@RequestMapping(value="/donor/api")
-public class DonorController {
+@RequestMapping(value="/member/api")
+public class MemberController {
 
 	@Autowired 
-	private DonorService donorService;
+	private MemberService memberService;
 	
 	/**
-	 * Get the list of all donors.
+	 * Get the list of all members.
 	 * @return
 	 */
 	@RequestMapping(value={"", "/"}, method=RequestMethod.GET)
-	public @ResponseBody List<DonorModel> getAll() {		
-		return this.donorService.getDonorModel(this.donorService.getAll());
+	public @ResponseBody List<MemberModel> getAll() {		
+		return this.memberService.getMemberModel(this.memberService.getAll());
 	}
 }

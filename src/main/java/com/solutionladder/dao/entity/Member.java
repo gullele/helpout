@@ -3,17 +3,18 @@ package com.solutionladder.dao.entity;
 import java.util.Date;
 
 import javax.persistence.Column;
+import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
 /**
- * Base class for person. 
+ * Base class for member. A member can help or can be helped out.
  * 
  * @author Kaleb Woldearegay <kaleb@solutionladder.com>
  */
-
-abstract public class Person {
+@Entity
+public class Member {
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	protected Integer id;
